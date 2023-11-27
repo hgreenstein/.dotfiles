@@ -1,17 +1,21 @@
 vim.g.mapleader = " "
 --local api = require "nvim-tree.api"
 --vim.keymap.set("n", "<leader>pv", api.tree.toggle())
-vim.api.nvim_set_keymap('v', '<leader>y', [[:'<,'>w !clip.exe<CR>]], {noremap = true, silent = true})
+vim.keymap.set("x", "<leader>p", [["_dP]])
+vim.keymap.set("x", "<leader>P", [["+p]])
+vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
+vim.keymap.set("n", "<leader>Y", [["+Y]])
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.g.clipboard = {
   name = 'WslClipboard',
   copy = {
-    ['+'] = 'clip.exe',
-    ['*'] = 'clip.exe',
+    ['+'] = 'xclip -selection clipboard',
+    ['*'] = 'xclip -selection clipboard',
   },
   paste = {
-    ['+'] = 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
-    ['*'] = 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+    ['+'] = 'xclip -selection clipboard -o',
+    ['*'] = 'xclip -selection clipboard -o',
   },
   cache_enabled = 0,
 }
-
