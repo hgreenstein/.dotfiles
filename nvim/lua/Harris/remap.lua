@@ -1,4 +1,3 @@
-vim.g.mapleader = " "
 --local api = require "nvim-tree.api"
 --vim.keymap.set("n", "<leader>pv", api.tree.toggle())
 vim.keymap.set("x", "<leader>p", [["_dP]])
