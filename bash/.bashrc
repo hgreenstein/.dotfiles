@@ -122,7 +122,7 @@ set -o vi
 export EDITOR="nvim"
 export VISUAL="nvim"
 colorscript -r
-eval "$(oh-my-posh init bash --config ~/dotfiles/bash/customTheme.omp.json)"
+eval "$(oh-my-posh init bash --config ~/.dotfiles/bash/customTheme.omp.json)"
 
 
 export NVM_DIR="$HOME/.nvm"

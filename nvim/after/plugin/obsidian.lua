@@ -4,7 +4,7 @@ obsidian.setup({
     workspaces = {
         {
             name = "Harris' Vault",
-            path = "~/obsidian"
+            path = "/mnt/g/Other computers/My Computer/Harris' Vault"
         },
     },
     templates = {
