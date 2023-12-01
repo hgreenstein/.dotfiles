@@ -33,6 +33,7 @@ Additionally, many standard programming libraries and environments must be insta
 3. C-compiler like GCC in path
 4. Java dev tools for java lsp servers
 5. Curl, Tar, Git, Gzip, Unzip, ripgrep, and more
+
 I hope to add a comprehensive installation script for all common linux operating systems in the future, but for now please refer to the linked documentation of each plugin you plan to use to
 ensure all system dependencies are installed.
 If you have been using your linux system for development for a long period of time, many of these may already be installed but if not, refer to the official documentation to install these tools
