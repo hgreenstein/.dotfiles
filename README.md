@@ -5,6 +5,12 @@ This repository contains links to multiple different configurations that live ac
 This folder repository is intented to live in either the hone directory or .config directory and the invidual directorys 
 and .config files are symbolically linked with the `ln -s` bash command to the appropriate directory, example `~/.bashrc` 
 
+### Neovim Config Example Image:
+![Neovim Image](Example%20Images/neovimExample.png)
+
+### Bashrc Config Example Image:
+![.bashrc image](Example%20Images/bashrcExample.png)
+
 ## Installation:
 
 1. First clone the repository into appropriate directory
@@ -34,6 +40,8 @@ Additionally, many standard programming libraries and environments must be insta
 4. Java dev tools for java lsp servers
 5. Curl, Tar, Git, Gzip, Unzip, ripgrep, and more
 
+
+
 I hope to add a comprehensive installation script for all common linux operating systems in the future, but for now please refer to the linked documentation of each plugin you plan to use to
 ensure all system dependencies are installed.
 If you have been using your linux system for development for a long period of time, many of these may already be installed but if not, refer to the official documentation to install these tools
@@ -51,9 +59,12 @@ Example for Ubuntu based Distros and those that us APT as a package manager:
 sudo apt install exa
 ```
 
+For the colorscript pixel art randomly at each run of the bashrc, see the documentation of [Shell Color Scripts](https://gitlab.com/dwt1/shell-color-scripts) by Derek Taylor
+
 #### Bash Credit:
-1. My bash uses [Oh My Posh](https://github.com/jandedobbeleer/oh-my-posh) for it's custom prompt, please refer to the original github for more 
-2. Additionally, credit to many useful terminal utility commands like [exa](https://github.com/ogham/exa) 
+1. My bash uses [Oh My Posh](https://github.com/jandedobbeleer/oh-my-posh) for it's custom prompt, please refer to the original github for more
+2. The pixel art that appears randomly on every bash prompt is [Shell Color Scripts](https://gitlab.com/dwt1/shell-color-scripts) by Derek Taylor
+3. Additionally, credit to many useful terminal utility commands like [exa](https://github.com/ogham/exa) 
 
 ### Neovim Credits:
 Neovim configuration utilizes the [Lazy.Nvim Package Manager](https://github.com/folke/lazy.nvim)
