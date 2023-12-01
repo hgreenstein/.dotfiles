@@ -24,6 +24,18 @@ B. Neovim (Assuming neovim is already installed and looking for the neovim folde
 ```bash
 ln -s ~/.dotfiles/nvim ~/.config/nvim 
 ```
+### Neovim Installation Part 2: System dependencies 
+Doing the above installation steps will successfully install all the plugins in Neovim but many errors will still likely occur upon startup of Neovim 
+This is due to package dependencies in many plugins, for example Telescope (cited below) requires [ripgrep](https://github.com/BurntSushi/ripgrep) for the grep functionality to work properly.
+Additionally, many standard programming libraries and environments must be installed including but not limited to:
+1. Python 
+2. Node
+3. C-compiler like GCC in path
+4. Java dev tools for java lsp servers
+5. Curl, Tar, Git, Gzip, Unzip, ripgrep, and more
+I hope to add a comprehensive installation script for all common linux operating systems in the future, but for now please refer to the linked documentation of each plugin you plan to use to
+ensure all system dependencies are installed.
+If you have been using your linux system for development for a long period of time, many of these may already be installed but if not, refer to the official documentation to install these tools
 
 ## Additional Information and Credit
 
@@ -63,8 +75,7 @@ Additionally, a variety of Neovim Plugins are used to extend the default Functio
 - [Null Ls Nvim](https://github.com/jose-elias-alvarez/null-ls.nvim) Additional LSP functionality
 - [Prettier Nvim](https://github.com/MunifTanjim/prettier.nvim) Prettier Linter formatting for HTML/JS/React(JSX/TSX)/CSS/ + more
 - [Vim Rainbow](https://github.com/frazrepo/vim-rainbow) Corresponding rainbow colored brackets for easy scope identification
-- [Vim Vsnip](https://github.com/hrsh7th/vim-vsnip) Additional Snippets
-- [Vim Vsnip Integ](https://github.com/hrsh7th/vim-vsnip-integ) Additional Snippets
+- [Vim Vsnip](https://github.com/hrsh7th/vim-vsnip) & [Vim Vsnip Integ](https://github.com/hrsh7th/vim-vsnip-integ) Additional Snippets
 - [Lualine Nvim](https://github.com/nvim-lualine/lualine.nvim) Adds nice status bar below focused buffer including mode, file name, line % and more
 - [Obsidian Nvim](https://github.com/epwalsh/obsidian.nvim) Adds Markdown support to Neovim for editting an Obsidian vault 
 - [Nvim Surround](https://github.com/kylechui/nvim-surround) Ability to quickly surround text in "", '', {}, (), func(), <tag></tag>, and more using motions like `ys+motion+[surround_char]` ex: `ysiw"` surrounds word with quotes
