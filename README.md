@@ -33,6 +33,7 @@ Additionally, many standard programming libraries and environments must be insta
 3. C-compiler like GCC in path
 4. Java dev tools for java lsp servers
 5. Curl, Tar, Git, Gzip, Unzip, ripgrep, and more
+
 I hope to add a comprehensive installation script for all common linux operating systems in the future, but for now please refer to the linked documentation of each plugin you plan to use to
 ensure all system dependencies are installed.
 If you have been using your linux system for development for a long period of time, many of these may already be installed but if not, refer to the official documentation to install these tools
@@ -81,3 +82,4 @@ Additionally, a variety of Neovim Plugins are used to extend the default Functio
 - [Nvim Surround](https://github.com/kylechui/nvim-surround) Ability to quickly surround text in "", '', {}, (), func(), <tag></tag>, and more using motions like `ys+motion+[surround_char]` ex: `ysiw"` surrounds word with quotes
 - [Nvim Comment](https://github.com/terrortylor/nvim-comment) Quickly comment out lines in any language with `gc+motion` or `gcc` for line
 - [Glow Nvim](https://github.com/ellisonleao/glow.nvim) Preview formatted markdown documents in neovim utilizing the glow package 
+- [Vim Fugative](https://github.com/tpope/vim-fugitive) Graphical Git management, staging, merging, commiting, pushing and more

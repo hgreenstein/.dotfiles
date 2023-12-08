@@ -105,4 +105,6 @@ return {
             require("glow").setup({})
         end
     },
+    -- Git utilities
+    'tpope/vim-fugitive',
 }
