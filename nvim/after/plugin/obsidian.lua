@@ -7,7 +7,4 @@ obsidian.setup({
             path = "/mnt/g/Other computers/My Computer/Harris' Vault"
         },
     },
-    templates = {
-        subdir = "Templates"
-    },
 })
