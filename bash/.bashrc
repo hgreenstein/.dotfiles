@@ -92,7 +92,8 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias ls='exa -alFh'
-alias evim='cd ~/.config/nvim && nvim .'
+alias evim='cd ~/.dotfiles/nvim && nvim .'
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -118,10 +119,18 @@ if ! shopt -oq posix; then
 fi
 export PATH="/usr/local/bin/nvim-linux64/bin/nvim:$PATH"
 export PATH="$PATH:/home/harris/.cargo/bin"
+
+# Set Vim Keybindings instead of Emacs
 set -o vi
+
+#Set Vim as my default editor
 export EDITOR="nvim"
 export VISUAL="nvim"
+
+#Run a random pixel art each time
 colorscript -r
+
+#Run my custom oh-my-posh prompt
 eval "$(oh-my-posh init bash --config ~/.dotfiles/bash/customTheme.omp.json)"
 
 
