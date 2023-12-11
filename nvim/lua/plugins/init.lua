@@ -53,7 +53,7 @@ return {
     -- Formatting and Linting
     'jose-elias-alvarez/null-ls.nvim',
     'MunifTanjim/prettier.nvim',
-'frazrepo/vim-rainbow', 
+    'frazrepo/vim-rainbow',
     -- Snippets
     'hrsh7th/vim-vsnip',
     'hrsh7th/vim-vsnip-integ',
@@ -107,4 +107,7 @@ return {
     },
     -- Git utilities
     'tpope/vim-fugitive',
+
+    -- LuaSnip
+    'L3MON4D3/LuaSnip',
 }
