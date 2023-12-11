@@ -22,9 +22,10 @@ git clone git@github.com:hgreenstein/.dotfiles.git ~/.dotfiles
 ```
 2. Create Symbolic links to the appropriate directories
    
-A. .bashrc
+A. .bashrc and .inputrc
 ```bash
 ln -s ~/.dotfiles/bash/.bashrc ~/.bashrc
+ln -s ~/.dotfiles/bash/.inputrc ~/.inputrc
 ```
 B. Neovim (Assuming neovim is already installed and looking for the neovim folder in `~/.config/nvim`
 ```bash
@@ -59,6 +60,10 @@ sudo apt install exa
 ```
 
 For the colorscript pixel art randomly at each run of the bashrc, see the documentation of [Shell Color Scripts](https://gitlab.com/dwt1/shell-color-scripts) by Derek Taylor
+
+#### Inputrc
+
+The .inputrc makes basic modifications like changing the default emacs keybindings to vi keybindings to fit with my neovim workflow. Additionally, it prepends a 'i' or 'n' to the prompt for insert and normal mode to easily keep track of vi mode while using the terminal
 
 #### Bash Credit:
 1. My bash uses [Oh My Posh](https://github.com/jandedobbeleer/oh-my-posh) for it's custom prompt, please refer to the original github for more

@@ -1,0 +1,12 @@
+# Use Vim keybinds instead of Emacs
+set editing-mode vi
+
+# Show current mode at the beginning of the prompt
+set show-mode-in-prompt on
+
+# Adds blue 'i' to prompt when in insert mode
+set vi-ins-mode-string "\e[94mi \e[0m"
+
+# Adds green 'n' to prompt when in normal mode
+set vi-cmd-mode-string "\e[32mn \e[0m"
+
