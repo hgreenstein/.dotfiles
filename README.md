@@ -18,7 +18,7 @@ and .config files are symbolically linked with the `ln -s` bash command to the a
 By default files like the bashrc will look for other resources like the terminal prompt theme in the home directory
 
 ```bash
-git clone git@github.com:hgreenstein/.dotfiles.git ~/.dotfiles
+git clone https://github.com/hgreenstein/.dotfiles.git ~/.dotfiles
 ```
 2. Create Symbolic links to the appropriate directories
    
