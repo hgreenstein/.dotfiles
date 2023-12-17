@@ -91,7 +91,7 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias ls='exa -alFh'
+alias ls='eza -alFh'
 alias evim='cd ~/.dotfiles/nvim && nvim .'
 
 # Add an "alert" alias for long running commands.  Use like so:

@@ -51,13 +51,14 @@ If you have been using your linux system for development for a long period of ti
 ### Bash
 Bash utilizes multiple aliases that may be useful for those that have the appropriate packages installed
 #### Example
-Alias: `ls -> exa -alFh` for a prettier, long formatted and human readable ls command
+Alias: `ls -> eza -alFh` for a prettier, long formatted and human readable ls command
 
-If you do not have exa installed on your system, it can be easily installed with a linux package manager:
-Example for Ubuntu based Distros and those that us APT as a package manager:
+If you do not have eza installed on your system, it can be easily installed with a linux package manager:
+Example for those with a Cargo Rust environment already setup:
 ```bash
-sudo apt install exa
+cargo install eza
 ```
+Learn more about eza on the [official GitHub page](https://github.com/eza-community/eza)
 
 For the colorscript pixel art randomly at each run of the bashrc, see the documentation of [Shell Color Scripts](https://gitlab.com/dwt1/shell-color-scripts) by Derek Taylor
 
