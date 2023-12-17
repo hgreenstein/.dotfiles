@@ -107,8 +107,6 @@ return {
     -- Git utilities
     'tpope/vim-fugitive',
 
-    -- LuaSnip
-    'L3MON4D3/LuaSnip',
     -- LazyGit (Trying replacement for Fugitive)
     {
         "kdheepak/lazygit.nvim",
