@@ -1,11 +1,12 @@
 --local api = require "nvim-tree.api"
 --vim.keymap.set("n", "<leader>pv", api.tree.toggle())
-vim.keymap.set("x", "<leader>p", [["_dP]])
-vim.keymap.set("x", "<leader>P", [["+p]])
+vim.keymap.set({"n", "v"}, "<leader>p", [["_dP]])
+vim.keymap.set({"n", "v"}, "<leader>P", [["+p]])
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<leader>gg", ':LazyGit<CR>')
 vim.g.clipboard = {
   name = 'WslClipboard',
   copy = {
