@@ -71,6 +71,12 @@ The .inputrc makes basic modifications like changing the default emacs keybindin
 2. The pixel art that appears randomly on every bash prompt is [Shell Color Scripts](https://gitlab.com/dwt1/shell-color-scripts) by Derek Taylor
 3. Additionally, credit to many useful terminal utility commands like [exa](https://github.com/ogham/exa) 
 
+### Tmux
+
+-Rebinds prefix to Ctrl-S 
+-Adds vim keybindings for navigation, visual mode, and window movement (prefix + hjkl)
+
+
 ### Neovim Credits:
 Neovim configuration utilizes the [Lazy.Nvim Package Manager](https://github.com/folke/lazy.nvim)
 Additionally, a variety of Neovim Plugins are used to extend the default Functionality Including:
