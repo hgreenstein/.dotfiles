@@ -119,7 +119,8 @@ if ! shopt -oq posix; then
 fi
 export PATH="/usr/local/bin/nvim-linux64/bin/nvim:$PATH"
 export PATH="$PATH:/home/harris/.cargo/bin"
-
+# Adding Gradle to Path
+export PATH=$PATH:/opt/gradle/gradle-8.5/bin
 # Set Vim Keybindings instead of Emacs
 set -o vi
 
