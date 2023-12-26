@@ -74,8 +74,26 @@ lspconfig.html.setup{
         client.resolved_capabilities.document_formatting = false
     end,
 }
+--Rust Tools Config
+local rt = require("rust-tools")
+
+rt.setup({
+  server = {
+    on_attach = function(_, bufnr)
+      -- Hover actions
+      vim.keymap.set("n", "<C-space>", rt.hover_actions.hover_actions, { buffer = bufnr })
+      -- Code action groups
+      vim.keymap.set("n", "<Leader>a", rt.code_action_group.code_action_group, { buffer = bufnr })
+    end,
+  },
+    tools = {
+        hover_actions = {
+            auto_focus = true,
+        },
+    },
+})
+
 -- Emmet for HTML, CSS Snippets
-local configs = require'lspconfig.configs'
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true

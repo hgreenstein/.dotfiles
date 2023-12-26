@@ -41,7 +41,10 @@ return {
             },
         }
     },
-
+    -- Rust Tools
+    'simrat39/rust-tools.nvim',
+    -- LSP Inline Hints
+    'lvimuser/lsp-inlayhints.nvim',
     -- Autopairs
     'windwp/nvim-autopairs',
 
