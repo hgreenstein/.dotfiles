@@ -36,10 +36,10 @@ Doing the above installation steps will successfully install all the plugins in 
 This is due to package dependencies in many plugins, for example Telescope (cited below) requires [ripgrep](https://github.com/BurntSushi/ripgrep) for the grep functionality to work properly.
 Additionally, many standard programming libraries and environments must be installed including but not limited to:
 1. Python 
-2. Node
+2. Node & npm
 3. C-compiler like GCC in path
 4. Java dev tools for java lsp servers
-5. Curl, Tar, Git, Gzip, Unzip, ripgrep, lazygit
+5. Curl, Tar, Git, Gzip, Unzip, [ripgrep](https://github.com/BurntSushi/ripgrep), [lazygit](https://github.com/jesseduffield/lazygit)
 6. A "Nerd Font" of choice installed, a great resource is [nerdfonts.com](https://www.nerdfonts.com/font-downloads)
    a. If you don't have a preferred font, I suggest JetBrains Mono Nerd Font, it's designed for easy code readability! 
 
@@ -75,8 +75,19 @@ The .inputrc makes basic modifications like changing the default emacs keybindin
 
 ### Tmux
 
--Rebinds prefix to Ctrl-S 
--Adds vim keybindings for navigation, visual mode, and window movement (ctrl + hjkl)
+- Rebinds prefix to Ctrl-S 
+
+- Adds vim keybindings for navigation and visual mode
+
+- Adds plugin support via [TPM](https://github.com/tmux-plugins/tpm)
+
+#### Tmux plugins
+
+- Easily switch between Neovim and Tmux panes with ctrl + hjkl on both!
+   - Dual support comes via the [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) plugin
+   - Must be installed on both Neovim and Tmux
+- Informative and easy to read, red and black status bar
+   - Provided by the [tmux-power](https://github.com/wfxr/tmux-power) plugin
 
 
 ### Neovim Credits:
@@ -107,3 +118,7 @@ Additionally, a variety of Neovim Plugins are used to extend the default Functio
 - [Nvim Comment](https://github.com/terrortylor/nvim-comment) Quickly comment out lines in any language with `gc+motion` or `gcc` for line
 - [Glow Nvim](https://github.com/ellisonleao/glow.nvim) Preview formatted markdown documents in neovim utilizing the glow package 
 - [Vim Fugative](https://github.com/tpope/vim-fugitive) Graphical Git management, staging, merging, commiting, pushing and more
+- [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator) Easily switch between Neovim and Tmux panes with ctrl + hjkl on both!
+- [Lazygit.nvim](https://github.com/kdheepak/lazygit.nvim) Bring a floating lazygit terminal panel into your neovim if [lazygit](https://github.com/jesseduffield/lazygit) is already installed
+- [Rust Tools](https://github.com/simrat39/rust-tools.nvim) Adds tools for developing in the rust language such as in buffer running of code
+- [LSP Inlay Hints](https://github.com/lvimuser/lsp-inlayhints.nvim) Adds in line hints from the language server (ex: adds type hints for rust variables and functions when types are only implicitly defined) 
