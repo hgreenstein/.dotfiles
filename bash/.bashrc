@@ -92,7 +92,11 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias ls='eza -alFh'
+
+#Auto editting aliases for various specific commonly altered config files
+alias nv='nvim .'
 alias evim='cd ~/.dotfiles/nvim && nvim .'
+alias edot='cd ~/.dotfiles && nvim .'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
