@@ -2,7 +2,7 @@
 ## Description:
 This repository contains links to multiple different configurations that live across my WSL and Linux Mint Environments. 
 
-This folder repository is intented to live in either the hone directory or .config directory and the invidual directorys 
+This folder repository is intented to live in either the home directory or .config directory and the invidual directorys 
 and .config files are symbolically linked with the `ln -s` bash command to the appropriate directory, example `~/.bashrc` 
 
 ### Neovim Config Example Image:
@@ -39,7 +39,9 @@ Additionally, many standard programming libraries and environments must be insta
 2. Node
 3. C-compiler like GCC in path
 4. Java dev tools for java lsp servers
-5. Curl, Tar, Git, Gzip, Unzip, ripgrep, and more
+5. Curl, Tar, Git, Gzip, Unzip, ripgrep, lazygit
+6. A "Nerd Font" of choice installed, a great resource is [nerdfonts.com](https://www.nerdfonts.com/font-downloads)
+   a. If you don't have a preferred font, I suggest JetBrains Mono Nerd Font, it's designed for easy code readability! 
 
 
 I hope to add a comprehensive installation script for all common linux operating systems in the future, but for now please refer to the linked documentation of each plugin you plan to use to
@@ -74,7 +76,7 @@ The .inputrc makes basic modifications like changing the default emacs keybindin
 ### Tmux
 
 -Rebinds prefix to Ctrl-S 
--Adds vim keybindings for navigation, visual mode, and window movement (prefix + hjkl)
+-Adds vim keybindings for navigation, visual mode, and window movement (ctrl + hjkl)
 
 
 ### Neovim Credits:
