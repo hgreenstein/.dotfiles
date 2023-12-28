@@ -132,6 +132,9 @@ set -o vi
 export EDITOR="nvim"
 export VISUAL="nvim"
 
+#Initialize zoxide
+eval "$(zoxide init bash)"
+
 #Run a random pixel art each time
 colorscript -r
 
