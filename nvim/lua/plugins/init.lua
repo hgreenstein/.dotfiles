@@ -143,4 +143,8 @@ return {
             { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
         },
     },
+    -- Debugger Adapter Protocol (DAP)
+    'mfussenegger/nvim-dap',
+    -- Javascript Specific Debugger
+    'mxsdev/nvim-dap-vscode-js'
 }
