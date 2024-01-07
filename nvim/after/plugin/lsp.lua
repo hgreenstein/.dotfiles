@@ -8,18 +8,19 @@ lsp_zero.on_attach(function(client, bufnr)
     end, opts)
     vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
     vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
-    vim.keymap.set("n", "<leader>vws", function() vim.lsp.buf.workspace_symbol() end, opts)
-    vim.keymap.set("n", "<leader>vd", function() vim.diagnostic.open_float() end, opts)
+    vim.keymap.set("n", "<leader>cs", function() vim.lsp.buf.workspace_symbol() end, {desc = "[C]ode Workspace [S]ymbol"})
+    vim.keymap.set("n", "<leader>cd", function() vim.diagnostic.open_float() end, {desc = "[C]ode [D]iagnostic"})
     vim.keymap.set("n", "[d", function() vim.diagnostic.goto_next() end, opts)
     vim.keymap.set("n", "]d", function() vim.diagnostic.goto_prev() end, opts)
-    vim.keymap.set("n", "<leader>vca", function() vim.lsp.buf.code_action() end, opts)
-    vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, opts)
-    vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
+    vim.keymap.set("n", "<leader>ca", function() vim.lsp.buf.code_action() end, {desc = "[C]ode [A]ction"})
+    vim.keymap.set("n", "<leader>cr", function() vim.lsp.buf.references() end, {desc = "[C]ode [R]eferences"})
+    vim.keymap.set("n", "<leader>cn", function() vim.lsp.buf.rename() end, {desc = "[C]ode Re[n]ame"})
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
     vim.keymap.set("i", "<M-f>", function() vim.lsp.buf.completion() end, opts)
 end)
 
 require('mason').setup({})
+require("mason-nvim-dap").setup()
 require('mason-lspconfig').setup({
     ensure_installed = { 'tsserver', 'rust_analyzer', 'jdtls', 'lua_ls', 'html', 'cssls', 'denols'},
     handlers = {
@@ -83,7 +84,7 @@ rt.setup({
       -- Hover actions
       vim.keymap.set("n", "<C-space>", rt.hover_actions.hover_actions, { buffer = bufnr })
       -- Code action groups
-      vim.keymap.set("n", "<Leader>a", rt.code_action_group.code_action_group, { buffer = bufnr })
+      vim.keymap.set("n", "<Leader>gca", rt.code_action_group.code_action_group, { buffer = bufnr, desc = "Rust tools [g]et [c]ode [a]ction group"})
     end,
   },
     tools = {

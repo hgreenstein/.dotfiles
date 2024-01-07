@@ -158,6 +158,7 @@ return {
 
     'mxsdev/nvim-dap-vscode-js',
     'jay-babu/mason-nvim-dap.nvim',
+    {
     "David-Kunz/gen.nvim",
     opts = {
         model = "codellama:7b", -- The default model to use.
@@ -176,4 +177,5 @@ return {
         debug = false -- Prints errors and the command which is run.
     }
 },
+    { 'folke/which-key.nvim', opts = {} },
 }
