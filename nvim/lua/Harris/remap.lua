@@ -15,6 +15,8 @@ vim.keymap.set({"n", "i", "v"}, "<C-j>", "<C-w>j")
 vim.keymap.set({"n", "i", "v"}, "<C-h>", "<C-w>h")
 --Pulls up LazyGit in Neovim
 vim.keymap.set("n", "<leader>gg", ':LazyGit<CR>')
+--Gen.nvim code ai help
+vim.keymap.set({ 'n', 'v' }, '<leader>]', ':Gen<CR>')
 vim.g.clipboard = {
   name = 'WslClipboard',
   copy = {
