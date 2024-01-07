@@ -145,6 +145,17 @@ return {
     },
     -- Debugger Adapter Protocol (DAP)
     'mfussenegger/nvim-dap',
-    -- Javascript Specific Debugger
-    'mxsdev/nvim-dap-vscode-js'
+    -- Debug UI
+    {
+        'rcarriga/nvim-dap-ui',
+        dependencies = {
+            'mfussenegger/nvim-dap'
+        },
+    },
+    -- Javascript Specific Debuggers
+
+    'microsoft/vscode-js-debug',
+
+    'mxsdev/nvim-dap-vscode-js',
+    'jay-babu/mason-nvim-dap.nvim',
 }
