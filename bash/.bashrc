@@ -97,6 +97,7 @@ alias ls='eza -alFh'
 alias nv='nvim .'
 alias evim='cd ~/.dotfiles/nvim && nvim .'
 alias edot='cd ~/.dotfiles && nvim .'
+alias ss='ss -tulnp'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -136,7 +137,11 @@ export VISUAL="nvim"
 eval "$(zoxide init bash)"
 
 #Run a random pixel art each time
-colorscript -r
+if [ -f ~/.config/professional.txt ]; then
+    colorscript -e mindcorpAI
+else
+    colorscript -r
+fi
 
 #Run my custom oh-my-posh prompt
 eval "$(oh-my-posh init bash --config ~/.dotfiles/bash/customTheme.omp.json)"
@@ -145,3 +150,4 @@ eval "$(oh-my-posh init bash --config ~/.dotfiles/bash/customTheme.omp.json)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
