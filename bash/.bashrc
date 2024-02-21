@@ -98,6 +98,8 @@ alias nv='nvim .'
 alias evim='cd ~/.dotfiles/nvim && nvim .'
 alias edot='cd ~/.dotfiles && nvim .'
 alias ss='ss -tulnp'
+#Lazygit alias
+alias lg='lazygit'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
