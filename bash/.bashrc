@@ -123,6 +123,7 @@ if ! shopt -oq posix; then
 fi
 export PATH="/usr/local/bin/nvim-linux64/bin/nvim:$PATH"
 export PATH="$PATH:~/.cargo/bin"
+export PATH="$PATH:/usr/local/go/bin"
 # Adding Gradle to Path
 export PATH=$PATH:/opt/gradle/gradle-8.5/bin
 # Set Vim Keybindings instead of Emacs
@@ -145,3 +146,14 @@ eval "$(oh-my-posh init bash --config ~/.dotfiles/bash/customTheme.omp.json)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# pnpm
+export PNPM_HOME="~/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+export BROWSER="/mnt/c/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe"
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
