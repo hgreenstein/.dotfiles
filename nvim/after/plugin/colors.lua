@@ -8,6 +8,7 @@ vim.cmd 'set t_co=256'
 -- --
 -- -- -- set the color scheme
 -- vim.cmd 'colorscheme vscode'
-vim.cmd 'colorscheme vscode'
+-- vim.cmd 'colorscheme vscode'
 -- -- configure airline theme
+vim.cmd 'colorscheme arctic'
 -- vim.g.airline_theme = 'onehalfdark'
