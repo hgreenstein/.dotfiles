@@ -18,3 +18,11 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 vim.opt.linebreak = true
 vim.opt.wrap = true
+vim.cmd [[
+augroup YankHighlight
+    autocmd!
+    autocmd TextYankPost * silent! lua vim.highlight.on_yank({higroup="IncSearch", timeout=150})
+augroup END
+]]
+
+
