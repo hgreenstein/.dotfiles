@@ -1,2 +1,10 @@
 gui:
-  enlargedSideViewLocation: 'top'
+  enlargedSideViewLocation: 'left'
+  branchColorPatterns:
+    'feat/.+': '#FF7B00'
+    'feature/.+': '#FF7B00'
+    'hotfix/.+': '#F72C25'
+    'MVZ-\d+/.+': 'blue'
+    'feat/MVZ-.+': 'blue'
+    'main': '#70E000'
+    'staging': '#FCBF49'
